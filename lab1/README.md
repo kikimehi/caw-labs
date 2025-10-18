@@ -1,0 +1,1 @@
+The :focus pseudo-class is used to highlight elements that are currently active or selected, such as input fields when clicked or navigated with the keyboard. It improves user experience and accessibility by showing the user where they are typing or interacting.
