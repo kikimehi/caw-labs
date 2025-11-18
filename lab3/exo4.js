@@ -1,4 +1,4 @@
-// exo4.js
+
 import fs from 'fs';
 
 const fileName = process.argv[2];
@@ -16,7 +16,6 @@ fs.writeFile(fileName, text, 'utf8', (err) => {
     }
     console.log("The file has been saved!");
 
-    // Read and display the file contents
     fs.readFile(fileName, 'utf8', (err, data) => {
         if (err) {
             console.error(`Error reading file: ${err.message}`);
