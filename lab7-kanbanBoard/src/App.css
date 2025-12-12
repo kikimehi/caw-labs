@@ -1,0 +1,154 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* LAYOUT */
+.board {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+/* COLUMN */
+.column {
+  width: 290px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  border-top: 5px solid #3b82f6; /* blue top stripe */
+}
+
+#todo-column {
+  border-top-color: #ef4444; /* red for To Do */
+}
+
+#inprogress-column {
+  border-top-color: #f59e0b; /* amber for In Progress */
+}
+
+#done-column {
+  border-top-color: #10b981; /* green for Done */
+}
+
+.column h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.empty {
+  opacity: 0.5;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* TASK CARD */
+.task-card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+
+.task-card:hover {
+  transform: scale(1.02);
+  background: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+/* BUTTONS */
+button {
+  padding: 6px 10px;
+  background: #3b82f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+}
+
+button:hover {
+  background: #e6e6e6;
+  color: #333;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 4px solid #3b82f6;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+.form button {
+  margin-left: 10px;
+}
